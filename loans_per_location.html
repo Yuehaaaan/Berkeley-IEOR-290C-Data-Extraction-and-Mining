@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 960px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([0, 0], 2);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var circle_1 = L.circle([12.879721, 121.774017], 3026530, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_1.bindPopup("Location: Philippines, Number of Loans 605306");
+map.addLayer(circle_1)
+
+var circle_2 = L.circle([-2.5, -73.05], 2648290, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_2.bindPopup("Location: Peru, Number of Loans 529658");
+map.addLayer(circle_2)
+
+var circle_3 = L.circle([27.3, 72.516667], 69930, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_3.bindPopup("Location: India, Number of Loans 13986");
+map.addLayer(circle_3)
+
+var circle_4 = L.circle([39.4833333, 70.1166667], 331890, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_4.bindPopup("Location: Tajikistan, Number of Loans 66378");
+map.addLayer(circle_4)
+
+var circle_5 = L.circle([14.8166667, -83.7166667], 220170, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_5.bindPopup("Location: Nicaragua, Number of Loans 44034");
+map.addLayer(circle_5)
+
+var circle_6 = L.circle([24.3761, 70.6746], 76895, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_6.bindPopup("Location: Pakistan, Number of Loans 15379");
+map.addLayer(circle_6)
+
+var circle_7 = L.circle([39.5166667, 46.05], 67880, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_7.bindPopup("Location: Armenia, Number of Loans 13576");
+map.addLayer(circle_7)
+
+var circle_8 = L.circle([15.0, -92.283333], 106400, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_8.bindPopup("Location: Mexico, Number of Loans 21280");
+map.addLayer(circle_8)
+
+var circle_9 = L.circle([-17.935, 35.4355556], 6265, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_9.bindPopup("Location: Mozambique, Number of Loans 1253");
+map.addLayer(circle_9)
+
+var circle_10 = L.circle([14.95, -91.216667], 16560, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_10.bindPopup("Location: Guatemala, Number of Loans 3312");
+map.addLayer(circle_10)
+
+var circle_11 = L.circle([12.3906, 10.5824], 8710, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_11.bindPopup("Location: Nigeria, Number of Loans 1742");
+map.addLayer(circle_11)
+
+var circle_12 = L.circle([40.1833333, 71.3333333], 28055, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_12.bindPopup("Location: Kyrgyzstan, Number of Loans 5611");
+map.addLayer(circle_12)
+
+var circle_13 = L.circle([-1.940278, 29.873888], 31155, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_13.bindPopup("Location: Rwanda, Number of Loans 6231");
+map.addLayer(circle_13)
+
+var circle_14 = L.circle([42.6166667, 42.8333333], 21535, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_14.bindPopup("Location: Georgia, Number of Loans 4307");
+map.addLayer(circle_14)
+
+var circle_15 = L.circle([-8.433, 115.2067], 15895, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_15.bindPopup("Location: Indonesia, Number of Loans 3179");
+map.addLayer(circle_15)
+
+var circle_16 = L.circle([37.09024, -95.712891], 49110, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_16.bindPopup("Location: United States, Number of Loans 9822");
+map.addLayer(circle_16)
+
+var circle_17 = L.circle([47.15, 33.616667], 16495, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_17.bindPopup("Location: Ukraine, Number of Loans 3299");
+map.addLayer(circle_17)
+
+var circle_18 = L.circle([7.5, -12.0833333], 23720, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_18.bindPopup("Location: Sierra Leone, Number of Loans 4744");
+map.addLayer(circle_18)
+
+var circle_19 = L.circle([18.4333333, -73.75], 1655, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_19.bindPopup("Location: Haiti, Number of Loans 331");
+map.addLayer(circle_19)
+
+var circle_20 = L.circle([36.84154, 71.069323], 3870, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_20.bindPopup("Location: Afghanistan, Number of Loans 774");
+map.addLayer(circle_20)
+
+var circle_21 = L.circle([40.2275, 49.419444], 29535, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_21.bindPopup("Location: Azerbaijan, Number of Loans 5907");
+map.addLayer(circle_21)
+
+var circle_22 = L.circle([14.7361111, -17.1211111], 33590, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_22.bindPopup("Location: Senegal, Number of Loans 6718");
+map.addLayer(circle_22)
+
+var circle_23 = L.circle([-20.2666667, 30.9166667], 3355, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_23.bindPopup("Location: Zimbabwe, Number of Loans 671");
+map.addLayer(circle_23)
+
+var circle_24 = L.circle([6.1783333, -9.6719444], 3660, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_24.bindPopup("Location: Liberia, Number of Loans 732");
+map.addLayer(circle_24)
+
+var circle_25 = L.circle([-8.558458, 125.578151], 2200, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_25.bindPopup("Location: Timor-Leste, Number of Loans 440");
+map.addLayer(circle_25)
+
+var circle_26 = L.circle([15.2, -84.0833333], 14750, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_26.bindPopup("Location: Honduras, Number of Loans 2950");
+map.addLayer(circle_26)
+
+var circle_27 = L.circle([28.394857, 84.124008], 2880, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_27.bindPopup("Location: Nepal, Number of Loans 576");
+map.addLayer(circle_27)
+
+var circle_28 = L.circle([13.0, -3.2166667], 1135, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_28.bindPopup("Location: Burkina Faso, Number of Loans 227");
+map.addLayer(circle_28)
+
+var circle_29 = L.circle([7.7166667, 13.4833333], 2090, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_29.bindPopup("Location: Cameroon, Number of Loans 418");
+map.addLayer(circle_29)
+
+var circle_30 = L.circle([-30.559482, 22.937506], 430, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_30.bindPopup("Location: South Africa, Number of Loans 86");
+map.addLayer(circle_30)
+
+var circle_31 = L.circle([-1.1333333, 41.5333333], 45, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_31.bindPopup("Location: Somalia, Number of Loans 9");
+map.addLayer(circle_31)
+
+
+
+
+
+
+</script>
+
+</body>

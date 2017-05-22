@@ -1,0 +1,74 @@
+This is a document to describe all tables within the kivateam database
+
+Qingyu Wei.
+Team: KivaTeams
+
+Table: about
+
+Summary: this table store basic information about each of the kiva team from the Kiva website. It includes, the team url, team rankings, and number of team members, etc.
+
+Columns:
+team_url - varchar(200). The url of the team
+team_name - varchar(100). The official name of the team
+intro - text. The reason why the team is founded and for what purpose
+about_us - text. The introduction about the team
+date_founded - date. The date the team was founded
+category - varchar(50). The category the team belons to
+team_members - int. How many members this team have
+loans - int. How many loans did this team currently make
+loans_per_member - decimal(10,2). Average loans per member
+rankings columns - int. Ranking of the team based on the given category. 0 if no ranking
+
+Table: countries
+
+Summary: this table stores information about top countries each team make loans to.
+
+Columns:
+team_url - varchar(200). The url of the team
+top_countires - varchar(30). The top countries of which the team made loans to
+number_loans - int. The number of loans the team made to that country
+percentage - decimal(5,2). The percentage of loans the team made to that country
+
+Table: impact
+
+Summary: this table stores information about the impact this team has made
+
+Columns:
+team_url - varchar(200). The url of the team
+countries - varchar(20). How many countries this team has activities in
+total_loans - int. How many loans did this team make in total (inaccurate)
+loans_per_member - decimal(12,2). Aerage loans made per team member
+total_amount_lent - decimal(12,2) The amount of money loaned out (in dollars)
+team_members - int. The total number of members within this team
+loans_this_month - int. The number of loans made this month
+borrower_female_count - int. The number of borrowers that is female
+borrower_male_count - int. The number of borrowers that is male
+borrower_female_percentage - decimal(5,2). The percentage of borrowers that is female
+borrower_male_percentage - decimal(5,2). The percentage of borrowers that is male
+
+Table: loans
+
+Summary: this table stores information about loans made out to by each team (first 3 pages)
+
+Columns:
+team_url - varchar(200). The url of the team
+loan_id - int. The unique loan id for each loan
+category - varchar(20). The category the loan belongs to
+raising_status - varchar(20). Still raising funds for the loan or already raised
+name - varchar(20). The name of the borrower
+
+Table: members
+
+Summary: stores information about team members
+
+Columns:
+team_url - varchar(200). The url of the team
+team_member - varchar(20). The name of the team member
+location - varchar(50). The location of the team member
+
+Table: sectors
+
+Summary: stores information about the top 5 sectors of each team doing loans in
+team_url - varchar(200). The url of the team
+sector - varchar(50). The sector the team loaned in
+count - int. The number of loans the team made in the sector

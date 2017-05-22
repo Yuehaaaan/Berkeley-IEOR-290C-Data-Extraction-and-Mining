@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 960px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([0, 0], 2);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var circle_1 = L.circle([35.0848894, -106.6468148], 1751730, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_1.bindPopup("Location: United States, Number of members 58391");
+map.addLayer(circle_1)
+
+var circle_2 = L.circle([41.5910472, 8.9466146], 21690, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_2.bindPopup("Location: Italy, Number of members 723");
+map.addLayer(circle_2)
+
+var circle_3 = L.circle([48.8242522, 2.547177], 20550, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_3.bindPopup("Location: France, Number of members 685");
+map.addLayer(circle_3)
+
+var circle_4 = L.circle([-28.583333, -49.166667], 7650, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_4.bindPopup("Location: Brazil, Number of members 255");
+map.addLayer(circle_4)
+
+var circle_5 = L.circle([1.233333, 110.516667], 6450, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_5.bindPopup("Location: Malaysia, Number of members 215");
+map.addLayer(circle_5)
+
+var circle_6 = L.circle([31.012214, 72.437868], 3840, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_6.bindPopup("Location: Pakistan, Number of members 128");
+map.addLayer(circle_6)
+
+var circle_7 = L.circle([41.501097, 36.068873], 3780, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_7.bindPopup("Location: Turkey, Number of members 126");
+map.addLayer(circle_7)
+
+var circle_8 = L.circle([44.766667, 28.883333], 3150, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_8.bindPopup("Location: Romania, Number of members 105");
+map.addLayer(circle_8)
+
+var circle_9 = L.circle([-33.783333, -60.6], 3120, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_9.bindPopup("Location: Argentina, Number of members 104");
+map.addLayer(circle_9)
+
+var circle_10 = L.circle([55.4028, 81.3944], 2760, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_10.bindPopup("Location: Russian Federation, Number of members 92");
+map.addLayer(circle_10)
+
+var circle_11 = L.circle([37.9202057, -122.2937428], 660, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_11.bindPopup("Location: California, Number of members 22");
+map.addLayer(circle_11)
+
+var circle_12 = L.circle([30.2153869, -97.7960118], 540, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_12.bindPopup("Location: Texas, Number of members 18");
+map.addLayer(circle_12)
+
+var circle_13 = L.circle([-33.6833333, -53.55], 480, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_13.bindPopup("Location: Uruguay, Number of members 16");
+map.addLayer(circle_13)
+
+var circle_14 = L.circle([33.6832181, -84.448772], 360, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_14.bindPopup("Location: Georgia, Number of members 12");
+map.addLayer(circle_14)
+
+var circle_15 = L.circle([39.4486879, -84.3699767], 270, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_15.bindPopup("Location: Ohio, Number of members 9");
+map.addLayer(circle_15)
+
+var circle_16 = L.circle([45.5205043, -122.707349], 210, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_16.bindPopup("Location: Oregon, Number of members 7");
+map.addLayer(circle_16)
+
+var circle_17 = L.circle([40.7999209, -73.9683102], 180, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_17.bindPopup("Location: New York, Number of members 6");
+map.addLayer(circle_17)
+
+var circle_18 = L.circle([-12.654444, 13.478611], 150, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_18.bindPopup("Location: Angola, Number of members 5");
+map.addLayer(circle_18)
+
+var circle_19 = L.circle([43.0142978, -83.6893547], 120, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_19.bindPopup("Location: Michigan, Number of members 4");
+map.addLayer(circle_19)
+
+var circle_20 = L.circle([40.2120325, -111.6302998], 120, {
+                            color: '#3186cc',
+                            fillColor: '#3186cc',
+                            fillOpacity: 0.6
+                            });
+circle_20.bindPopup("Location: Utah, Number of members 4");
+map.addLayer(circle_20)
+
+
+
+
+
+
+</script>
+
+</body>

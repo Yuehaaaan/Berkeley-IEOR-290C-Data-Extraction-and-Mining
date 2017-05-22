@@ -1,0 +1,71 @@
+create table about
+(
+allranking_loaned_thismonth int,
+allranking_user_lastmonth int,
+loans_per_member decimal(10,2),
+intro text,
+team_name varchar(100),
+loans int(11),
+about_us text,
+allranking_user_alltime text,
+category varchar(50),
+date_founded date,
+team_members int,
+allranking_loaned_lastmonth int,
+team_url varchar(200),
+allranking_loaned_alltime int,
+allranking_user_this_month int,
+primary key (team_url)
+);
+
+create table countries
+(
+team_url varchar(200),
+top_countries varchar(30),
+number_loans int,
+percentage decimal(5,2),
+primary key (team_url)
+);
+
+create table impact
+(
+borrower_female_count int,
+borrower_male_count int,
+team_members int,
+total_amount_lent decimal(100,2),
+loans_this_month int,
+new_members_this_month int,
+countries varchar(20),
+team_url varchar(200),
+loans_per_member decimal(100,2),
+borrower_male_percentage decimal(5,2),
+borrower_female_percentage decimal(5,2),
+total_loans int,
+primary key (team_url)
+);
+
+create table loans
+(
+team_url varchar(200),
+loan_id int,
+category varchar(50),
+country varchar(20),
+raising_status varchar(20),
+name varchar(20),
+repayment_status varchar(20),
+primary key (team_url)
+);
+
+create table members
+(
+team_url varchar(200),
+team_member varchar(20),
+location varchar(50)
+);
+
+create tabel sectors
+(
+team_url varchar(200)
+top_sectors varchar(50)
+number_loans int
+);
